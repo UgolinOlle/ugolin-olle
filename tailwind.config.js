@@ -26,6 +26,11 @@ module.exports = {
       green: '#6a994e',
       yellow: '#ffc300',
     },
+    extend: {
+      backgroundImage: {
+        mesh: 'url(../public/mesh.png)',
+      },
+    },
   },
   plugins: [],
 };
