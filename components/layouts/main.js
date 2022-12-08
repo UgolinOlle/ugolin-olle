@@ -7,27 +7,22 @@ import { GithubProvider } from '../../libs/github';
 import Footer from '../footer';
 import { ContactButton } from '../contact-button';
 
-const Main = ({ children, ...meta }) => {
-  const infos = {
-    ...meta,
-    title: 'Ugolin Ollé - Home',
-  };
-
+const Main = ({ children, title }) => {
   return (
     <div>
       <Head>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content="Ugolin's homepage" />
-        <meta name='author' content='Ugolin Ollé' />
-        <meta name='author' content='ugolin-olle' />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Ugolin's homepage" />
+        <meta name="author" content="Ugolin Ollé" />
+        <meta name="author" content="ugolin-olle" />
 
         <link
-          rel='shortcut icon'
-          href='../public/favicon.ico'
-          type='image/x-icon'
+          rel="shortcut icon"
+          href="../public/favicon.ico"
+          type="image/x-icon"
         />
 
-        <title>{infos.title}</title>
+        <title>{title} - Ugolin Ollé</title>
       </Head>
 
       <ThemeProvider>
@@ -35,7 +30,7 @@ const Main = ({ children, ...meta }) => {
           <Navbar />
           <ContactButton />
 
-          <div className='bg-white text-dark dark:bg-dark dark:text-white transition-all w-full pt-[68px]'>
+          <div className="bg-white text-dark dark:bg-dark dark:text-white transition-all w-full pt-[68px]">
             {children}
           </div>
 
