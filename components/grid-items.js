@@ -10,7 +10,7 @@ export const WorkItem = ({ children, id, title, thumbnail }) => {
           <Image
             src={thumbnail}
             alt={title}
-            className="rounded-3xl w-full lg:h-[400px]"
+            className="rounded-3xl w-full lg:h-[400px] dark:border-[1px] dark:border-white dark:rounded-3xl"
             placeholder="blur"
           />
           <h1 className="mt-2 text-[24px]">{title}</h1>
