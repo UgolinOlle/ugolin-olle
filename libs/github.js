@@ -18,12 +18,10 @@ export const GithubProvider = ({ children }) => {
     $api.get('/users/UgolinOlle/repos').then((res) => {
       res.data.map((item) => {
         let commitUrl = item.commits_url.replace('{/sha}', '');
-        console.log('repos', res.data);
         setRepos(res.data.length);
 
         $api.get(commitUrl).then((res) => {
           numCommits += res.data.length;
-          console.log('commits', res.data);
           setCommits(numCommits);
         });
       });
