@@ -27,7 +27,7 @@ export const Commit = () => {
   const { $commits } = useContext(GithubContext);
 
   return (
-    <div className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all bg-[url(../public/mesh.png)] bg-no-repeat">
+    <div className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all bg-[url('../public/mesh.png')] bg-no-repeat">
       <FaPlus className="text-[26px] absolute right-7 top-3" />
       <Number n={$commits} />
       <h2 className="text-bold text-2xl font-poppins">Nombre de commits</h2>
