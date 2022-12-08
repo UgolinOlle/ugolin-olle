@@ -7,7 +7,7 @@ import '../styles/globals.css';
 function Portfolio({ Component, pageProps }) {
   return (
     <AnimatePresence
-      exitBeforeEnter
+      mode="wait"
       initial={true}
       onExitComplete={() => {
         if (typeof window !== 'undefined') {
