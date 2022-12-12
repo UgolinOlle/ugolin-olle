@@ -174,7 +174,10 @@ export default function Home() {
                   <Commit />
                   <Repos />
                 </div>
-                <div className="flex item-center flex-col justify-center relative bg-yellow dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all bg-[url(../public/mesh-3.png)] bg-no-repeat">
+                <div
+                  className="flex item-center flex-col justify-center relative bg-yellow dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all bg-no-repeat"
+                  style={{ backgroundImage: `url(/mesh-3.png)` }}
+                >
                   <FaPlus className="text-[26px] absolute right-7 top-3" />
                   <p className="text-8xl text-bold text-center">9/10</p>
                   <h2 className="text-bold text-2xl text-center font-poppins">
@@ -227,7 +230,10 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="rounded-full shadow-2xl h-1/4 text-black lg:p-16 p-12 md:mt-10 lg:mt-0 w-full bg-[url(../public/mesh-2.png)] dark:bg-[url(../public/mesh.png)] hover:bg-[url(../public/mesh.png)] dark:hover:bg-[url(../public/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
+              <div
+                className="rounded-full shadow-2xl h-1/4 text-black lg:p-16 p-12 md:mt-10 lg:mt-0 w-full dark:bg-[url(/mesh.png)] hover:bg-[url(../public/mesh.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all"
+                style={{ backgroundImage: `url(/mesh.png)` }}
+              />
             </div>
           </div>
         </Section>
@@ -236,7 +242,7 @@ export default function Home() {
         <Section direction="flex-col" margin="mb-20" delay={2}>
           <div className="flex lg:flex-row flex-col items-center justify-between w-full mb-15 lg:px-10">
             <h2 className="text-6xl font-bold lg:w-1/4 mb-5">Qui je suis ?</h2>
-            <div className="rounded-full md:hidden lg:block shadow-2xl lg:h-[70px] h-[20px] text-black w-2/3 bg-[url(../public/mesh-2.png)] dark:bg-[url(../public/mesh.png)] hover:bg-[url(../public/mesh.png)] dark:hover:bg-[url(../public/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
+            <div className="rounded-full md:hidden lg:block shadow-2xl lg:h-[70px] h-[20px] text-black w-2/3 bg-[url(/mesh-2.png)] dark:bg-[url(../public/mesh.png)] hover:bg-[url(/mesh.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
           </div>
           <div className="lg:grid lg:grid-cols-3 lg:gap-20 my-20 flex flex-col px-5 lg:px-10">
             <p className="text-justify mb-5 font-poppins">

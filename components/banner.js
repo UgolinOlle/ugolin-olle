@@ -11,7 +11,7 @@ export const Banner = () => {
   return (
     <div
       className="flex items-center justify-center my-20 w-full lg:h-[220px] h-[100px] bg-no-repeat bg-cover"
-      style={{ backgroundImage: `url(/mesh-3.pmg)` }}
+      style={{ backgroundImage: `url(/mesh-3.png)` }}
     >
       <Textra
         effect="topDown"

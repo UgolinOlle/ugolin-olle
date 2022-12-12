@@ -35,14 +35,17 @@ export default function Services() {
           <span className="cursorText">{cursorText}</span>
         </motion.div>
 
-        {/*  Services */}
-        <Section direction="flex-col" margin="mt-10 mb-20">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-10 w-screen h-screen px-5">
-            <div className="flex flex-col items-center justify-center w-full h-full bg-[url(../public/mesh-5.png)] bg-no-repeat bg-cover rounded-[50px]">
-              <h2 className="text-6xl font-bold">
+        {/* Services */}
+        <Section direction="flex-col" margin="mt-20 mb-20" delay={0.1}>
+          <div className="lg:grid lg:grid-cols-2 lg:gap-10 flex flex-col justify-around items-center w-full h-full px-5">
+            <div
+              className="flex flex-col items-center justify-center w-full h-full bg-no-repeat bg-cover rounded-[50px]"
+              style={{ backgroundImage: `url(/mesh-5.png)` }}
+            >
+              <h2 className="lg:text-6xl text-4xl font-bold pt-5 lg:pt-0">
                 🚀 Site sur mesure <br /> ⚙️ Solution métier
               </h2>
-              <p className="py-5 text-[22px] font-poppins">
+              <p className="py-5 px-5 lg:px-0 lg:text-[22px] font-poppins">
                 Blogs - Site vitrine sur mesure - E-commerce.
               </p>
               <Button
@@ -52,10 +55,15 @@ export default function Services() {
                 mouseLeave={resetCursor}
               />
             </div>
-            <div className="w-full h-full lg:grid grid-cols-2 lg:gap-10">
-              <div className="flex flex-col items-center justify-center col-span-2 bg-[url(../public/mesh-4.png)] bg-no-repeat bg-cover rounded-[50px]">
-                <h2 className="text-5xl font-bold">📱 Application mobile</h2>
-                <p className="py-5 text-[22px] font-poppins">
+            <div className="w-full h-full flex flex-col justify-around items-center lg:grid lg:grid-cols-2 lg:gap-10 mt-10 lg:mt-0">
+              <div
+                className="flex flex-col items-center justify-center lg:mb-0 mb-8 lg:col-span-2 bg-no-repeat bg-cover rounded-[50px]"
+                style={{ backgroundImage: `url(/mesh-4.png)` }}
+              >
+                <h2 className="lg:text-5xl text-4xl font-bold pt-5">
+                  📱 Application mobile
+                </h2>
+                <p className="py-5 px-5 lg:px-0 lg:text-[22px] font-poppins">
                   Réalisation d&apos;application mobile sur iOs et Android.
                 </p>
                 <Button
@@ -65,8 +73,11 @@ export default function Services() {
                   mouseLeave={resetCursor}
                 />
               </div>
-              <div className="flex flex-col items-center justify-center bg-[url(../public/mesh-2.png)] bg-no-repeat bg-cover rounded-[50px]">
-                <h2 className="text-4xl font-bold">🧱 Intégration web</h2>
+              <div
+                className="flex flex-col items-center justify-center lg:mb-0 mb-8 bg-no-repeat bg-cover rounded-[50px]"
+                style={{ backgroundImage: `url(/mesh-2.png)` }}
+              >
+                <h2 className="text-4xl font-bold pt-5">🧱 Intégration web</h2>
                 <p className="py-5 text-[18px] font-poppins px-5 text-center">
                   Intégration de maquette web pour votre site ou application.
                 </p>
@@ -77,8 +88,11 @@ export default function Services() {
                   mouseLeave={resetCursor}
                 />
               </div>
-              <div className="flex flex-col items-center justify-center bg-[url(../public/mesh.png)] bg-no-repeat bg-cover rounded-[50px]">
-                <h2 className="text-4xl font-bold">🐛 Autres</h2>
+              <div
+                className="flex flex-col items-center justify-center bg-no-repeat bg-cover rounded-[50px]"
+                style={{ backgroundImage: `url(/mesh.png)` }}
+              >
+                <h2 className="text-4xl font-bold pt-5">🐛 Autres</h2>
                 <p className="py-5 text-[18px] font-poppins px-5 text-center">
                   Fixation de bugs sur vos sites ou maintenances.
                 </p>
