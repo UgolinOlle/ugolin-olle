@@ -42,7 +42,3 @@ body {
     pointer-events: none;
     margin: auto;
 }
-
-.mesh {
-    background-image: url("../public/mesh.png");
-}

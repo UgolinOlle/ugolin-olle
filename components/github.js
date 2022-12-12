@@ -3,6 +3,7 @@ import { FaPlus } from 'react-icons/fa';
 import { useSpring, animated } from 'react-spring';
 
 import { GithubContext } from '../libs/github';
+import mesh from '../public/mesh.png';
 
 function Number({ n }) {
   const { number } = useSpring({
@@ -27,7 +28,10 @@ export const Commit = () => {
   const { $commits } = useContext(GithubContext);
 
   return (
-    <div className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all mesh bg-no-repeat">
+    <div
+      className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(/mesh.png)` }}
+    >
       <FaPlus className="text-[26px] absolute right-7 top-3" />
       <Number n={$commits} />
       <h2 className="text-bold text-2xl font-poppins">Nombre de commits</h2>
@@ -39,7 +43,10 @@ export const Repos = () => {
   const { $repos } = useContext(GithubContext);
 
   return (
-    <div className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all bg-[url(../public/mesh-2.png)] bg-no-repeat">
+    <div
+      className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all  bg-no-repeat"
+      style={{ backgroundImage: `url(/mesh-2.png)` }}
+    >
       <FaPlus className="text-[26px] absolute right-7 top-3" />
       <Number n={$repos} />
       <h2 className="text-bold text-2xl font-poppins">Nombre de projet</h2>
