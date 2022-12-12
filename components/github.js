@@ -3,7 +3,6 @@ import { FaPlus } from 'react-icons/fa';
 import { useSpring, animated } from 'react-spring';
 
 import { GithubContext } from '../libs/github';
-import mesh from '../public/mesh.png';
 
 function Number({ n }) {
   const { number } = useSpring({
