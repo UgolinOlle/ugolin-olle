@@ -81,6 +81,17 @@ export const useVariants = (ref) => {
       x: mouseXPosition + 12,
       y: mouseYPosition + 12,
     },
+    commit: {
+      opacity: 1,
+      backgroundColor: '#343a40',
+      color: '#ffffff',
+      height: 120,
+      width: 330,
+      padding: '5px',
+      fontSize: '18px',
+      x: mouseXPosition + 12,
+      y: mouseYPosition + 12,
+    },
   };
 };
 
