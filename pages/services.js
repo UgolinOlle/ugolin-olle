@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { spring, useVariants } from '../libs/cursor';
 import { Section } from '../components/section';
 import { Button } from '../components/button';
-import Main from '../components/layouts/main';
+import Layout from '../components/layouts/main';
 
 export default function Services() {
   const [cursorText, setCursorText] = useState('');
@@ -23,7 +23,7 @@ export default function Services() {
   };
 
   return (
-    <Main title="Services">
+    <Layout title="Services">
       <div className="flex flex-col items-center w-full h-full" ref={ref}>
         {/* Cursor */}
         <motion.div
@@ -107,6 +107,6 @@ export default function Services() {
           </div>
         </Section>
       </div>
-    </Main>
+    </Layout>
   );
 }

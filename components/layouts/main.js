@@ -7,7 +7,7 @@ import { GithubProvider } from '../../libs/github';
 import Footer from '../footer';
 import { ContactButton } from '../contact-button';
 
-const Main = ({ children, title }) => {
+const Layout = ({ children, title }) => {
   return (
     <div>
       <Head>

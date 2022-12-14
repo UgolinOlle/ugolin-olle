@@ -28,10 +28,10 @@ import { Section } from '../components/section';
 import { Button } from '../components/button';
 import { Commit, Repos } from '../components/github';
 import { WorkItem } from '../components/grid-items';
+import Layout from '../components/layouts/main';
 import passwordCLI from '../public/Password CLI.png';
 import freelanceCRM from '../public/Freelance CRM.png';
 import profile from '../public/profile.png';
-import Main from '../components/layouts/main';
 
 export default function Home() {
   const [cursorText, setCursorText] = useState('');
@@ -75,8 +75,15 @@ export default function Home() {
     setCursorVariant('github');
   };
 
+  const commitCursor = () => {
+    setCursorText(
+      "Les commits c'est comme enregistrer un fichier sur un dépôt ou un dossier."
+    );
+    setCursorVariant('commit');
+  };
+
   return (
-    <Main title="Home">
+    <Layout title="Home">
       <div className="flex flex-col items-center" ref={ref}>
         {/* Cursor */}
         <motion.div
@@ -87,7 +94,6 @@ export default function Home() {
         >
           <span className="cursorText">{cursorText}</span>
         </motion.div>
-
         {/* Presentation block */}
         <Section direction="flex-row" margin="mt-28" delay={0.1}>
           <div className="flex flex-col lg:items-start items-center lg:p-9 pt-3.5 lg:mr-14">
@@ -171,7 +177,7 @@ export default function Home() {
               </h1>
               <div className="flex flex-col pt-5 lg:py-16">
                 <div className="grid lg:grid-cols-2 grid-cols-1 md:grid-cols-1 gap-6 mb-7">
-                  <Commit />
+                  <Commit onEnter={commitCursor} onLeave={resetCursor} />
                   <Repos />
                 </div>
                 <div
@@ -230,14 +236,10 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div
-                className="rounded-full shadow-2xl h-1/4 text-black lg:p-16 p-12 md:mt-10 lg:mt-0 w-full dark:bg-[url(/mesh.png)] hover:bg-[url(../public/mesh.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all"
-                style={{ backgroundImage: `url(/mesh.png)` }}
-              />
+              <div className="rounded-full shadow-2xl h-1/4 text-black lg:p-16 p-12 md:mt-10 lg:mt-0 w-full bg-[url(/mesh.png)] dark:bg-[url(/mesh.png)] hover:bg-[url(/mesh-2.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
             </div>
           </div>
         </Section>
-
         {/* About block */}
         <Section direction="flex-col" margin="mb-20" delay={2}>
           <div className="flex lg:flex-row flex-col items-center justify-between w-full mb-15 lg:px-10">
@@ -265,18 +267,17 @@ export default function Home() {
             </p>
           </div>
           <div className="flex lg:flex-row flex-col justify-center items-center">
-            <h2 className="lg:text-7xl text-3xl w-full font-bold lg:px-0 px-5 text-center lg:w-2/3">
+            <h2 className="lg:text-5xl text-3xl w-full font-bold lg:px-0 px-5 text-center lg:w-1/2">
               Let&apos;s go ? On va discuter de votre projet ?
             </h2>
             <Image
               src={profile}
               alt="Photo de profile"
-              className="lg:w-1/4 w-2/4 lg:mt-0 mt-10"
+              className="lg:w-1/3 w-2/4 lg:mt-0 lg:ml-10 mt-10"
             />
           </div>
           <Button link="mailto:ugolin@olle.pro" text="On tchat ?" />
         </Section>
-
         {/* Works block */}
         <Section margin="lg:mt-0 mt-20 mb-20" direction="flex-col" delay={3}>
           <h3 className="text-dark dark:text-white text-6xl font-bold lg:mb-10">
@@ -302,6 +303,6 @@ export default function Home() {
           </div>
         </Section>
       </div>
-    </Main>
+    </Layout>
   );
 }
