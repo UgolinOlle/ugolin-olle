@@ -23,7 +23,7 @@ function Number({ n }) {
   );
 }
 
-export const Commit = () => {
+export const Commit = ({ onEnter, onLeave }) => {
   const { $commits } = useContext(GithubContext);
 
   return (
@@ -33,7 +33,13 @@ export const Commit = () => {
     >
       <FaPlus className="text-[26px] absolute right-7 top-3" />
       <Number n={$commits} />
-      <h2 className="text-bold text-2xl font-poppins">Nombre de commits</h2>
+      <h2
+        className="text-bold text-2xl font-poppins"
+        onMouseEnter={onEnter}
+        onMouseLeave={onLeave}
+      >
+        Nombre de commits
+      </h2>
     </div>
   );
 };
