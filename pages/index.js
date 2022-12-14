@@ -22,16 +22,16 @@ import {
 import { DiGit } from 'react-icons/di';
 import Image from 'next/image';
 
-import { useVariants, spring } from '../libs/cursor';
-import { Banner } from '../components/banner';
-import { Section } from '../components/section';
-import { Button } from '../components/button';
-import { Commit, Repos } from '../components/github';
-import { WorkItem } from '../components/grid-items';
-import Layout from '../components/layouts/main';
-import passwordCLI from '../public/Password CLI.png';
-import freelanceCRM from '../public/Freelance CRM.png';
-import profile from '../public/profile.png';
+import { useVariants, spring } from '@/libs/cursor';
+import { Banner } from '@/components/banner';
+import { Section } from '@/components/section';
+import { Button } from '@/components/button';
+import { Commit, Repos } from '@/components/github';
+import { WorkItem } from '@/components/grid-items';
+import Layout from '@/components/layouts/main';
+import passwordCLI from '@/public/Password CLI.png';
+import freelanceCRM from '@/public/Freelance CRM.png';
+import profile from '@/public/profile.png';
 
 export default function Home() {
   const [cursorText, setCursorText] = useState('');

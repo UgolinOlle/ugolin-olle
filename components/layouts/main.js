@@ -41,4 +41,4 @@ const Layout = ({ children, title }) => {
   );
 };
 
-export default Main;
+export default Layout;
