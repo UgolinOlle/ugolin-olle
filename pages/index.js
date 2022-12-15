@@ -70,11 +70,6 @@ export default function Home() {
     setCursorVariant('network');
   };
 
-  const githubCursor = () => {
-    setCursorText(<FaGithub className="text-[54px]" />);
-    setCursorVariant('github');
-  };
-
   const commitCursor = () => {
     setCursorText(
       "Les commits c'est comme enregistrer un fichier sur un dépôt ou un dossier."
@@ -142,7 +137,7 @@ export default function Home() {
                 </li>
                 <li
                   className="rounded-full p-3 text-[20px] md:text-[28px] border-2 border-[#23272a] lg:mr-3 md:mr-5 text-black dark:border-white dark:text-white"
-                  onMouseEnter={githubCursor}
+                  onMouseEnter={networkCursor}
                   onMouseLeave={resetCursor}
                 >
                   <a
@@ -152,13 +147,6 @@ export default function Home() {
                   >
                     <FaGithub />
                   </a>
-                </li>
-                <li
-                  className="rounded-full p-3 text-[20px] md:text-[28px] border-2 border-[#23272a] lg:mr-3 md:mr-5 text-black dark:border-white dark:text-white"
-                  onMouseEnter={networkCursor}
-                  onMouseLeave={resetCursor}
-                >
-                  <FaLinkedinIn />
                 </li>
               </ul>
             </div>
