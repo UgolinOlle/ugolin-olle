@@ -20,12 +20,10 @@ export default function Footer() {
             Développeur <br /> Full Stack
           </h3>
           <p className="text-justify my-10 lg:w-2/3">
-            Hello! Je suis développeur Full Stack depuis pratiquement 2 ans
-            maintenant. Je suis actuellement localisé en Colombie (et oui ça
-            fait loin ahah). En tant que freelance, je vous donne la solution à
-            vos projet. Je vous guide tout au long de notre collaboration et
-            vous aide à faire vos choix. Je n’impose pas mon idée, j’améliore la
-            votre!
+            Je suis désormais à votre service pour réaliser vos projets web avec
+            soin afin de vous fournir un service de qualité, ou que vous soyez.
+            En recherche permanente de projets de toutes sortes, n’hésitez pas à
+            me contacter pour discuter du votre.
           </p>
         </div>
         <div className="flex flex-col justify-around items-center">

@@ -60,7 +60,7 @@ export default function Services() {
                 className="flex flex-col items-center justify-center lg:mb-0 mb-8 lg:col-span-2 bg-no-repeat bg-cover rounded-[50px]"
                 style={{ backgroundImage: `url(/mesh-4.png)` }}
               >
-                <h2 className="lg:text-5xl text-4xl font-bold pt-5">
+                <h2 className="lg:text-5xl text-4xl font-bold pt-5 text-center">
                   📱 Application mobile
                 </h2>
                 <p className="py-5 px-5 lg:px-0 lg:text-[22px] font-poppins">

@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react';
 import $api from './api';
 
@@ -20,10 +21,18 @@ export const GithubProvider = ({ children }) => {
         let commitUrl = item.commits_url.replace('{/sha}', '');
         setRepos(res.data.length);
 
-        $api.get(commitUrl).then((res) => {
-          numCommits += res.data.length;
-          setCommits(numCommits);
-        });
+        axios
+          .get(commitUrl, {
+            baseURL: 'https://api.github.com',
+            auth: {
+              username: 'UgolinOlle',
+              password: process.env['GITHUB_TOKEN'],
+            },
+          })
+          .then((res) => {
+            numCommits += res.data.length;
+            setCommits(numCommits);
+          });
       });
     });
   }, []);

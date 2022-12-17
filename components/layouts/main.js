@@ -2,8 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 
 import Navbar from '../navbar';
-import { ThemeProvider } from '../../libs/theme';
-import { GithubProvider } from '../../libs/github';
+import { ThemeProvider } from '@/libs/theme';
+import { GithubProvider } from '@/libs/github';
 import Footer from '../footer';
 import { ContactButton } from '../contact-button';
 
@@ -16,11 +16,7 @@ const Layout = ({ children, title }) => {
         <meta name="author" content="Ugolin Ollé" />
         <meta name="author" content="ugolin-olle" />
 
-        <link
-          rel="shortcut icon"
-          href="../public/favicon.ico"
-          type="image/x-icon"
-        />
+        <link rel="shortcut icon" href="/profile.png" type="image/x-icon" />
 
         <title>{title} - Ugolin Ollé</title>
       </Head>

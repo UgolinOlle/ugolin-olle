@@ -32,6 +32,7 @@ import Layout from '@/components/layouts/main';
 import passwordCLI from '@/public/Password CLI.png';
 import freelanceCRM from '@/public/Freelance CRM.png';
 import profile from '@/public/profile.png';
+import { Paragraph } from '@/components/paragraph';
 
 export default function Home() {
   const [cursorText, setCursorText] = useState('');
@@ -89,6 +90,7 @@ export default function Home() {
         >
           <span className="cursorText">{cursorText}</span>
         </motion.div>
+
         {/* Presentation block */}
         <Section direction="flex-row" margin="mt-28" delay={0.1}>
           <div className="flex flex-col lg:items-start items-center lg:p-9 pt-3.5 lg:mr-14">
@@ -228,6 +230,7 @@ export default function Home() {
             </div>
           </div>
         </Section>
+
         {/* About block */}
         <Section direction="flex-col" margin="mb-20" delay={2}>
           <div className="flex lg:flex-row flex-col items-center justify-between w-full mb-15 lg:px-10">
@@ -235,28 +238,33 @@ export default function Home() {
             <div className="rounded-full md:hidden lg:block shadow-2xl lg:h-[70px] h-[20px] text-black w-2/3 bg-[url(/mesh-2.png)] dark:bg-[url(../public/mesh.png)] hover:bg-[url(/mesh.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
           </div>
           <div className="lg:grid lg:grid-cols-3 lg:gap-20 my-20 flex flex-col px-5 lg:px-10">
-            <p className="text-justify mb-5 font-poppins">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vitae tempus eros, at interdum risus. Sed risus sapien, tincidunt
-              quis imperdiet eu, lobortis eget libero. Mauris commodo id purus
-              id sodales.
-            </p>
-            <p className="text-justify mb-5 font-poppins">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vitae tempus eros, at interdum risus. Sed risus sapien, tincidunt
-              quis imperdiet eu, lobortis eget libero. Mauris commodo id purus
-              id sodales.
-            </p>
-            <p className="text-justify mb-5 font-poppins">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              vitae tempus eros, at interdum risus. Sed risus sapien, tincidunt
-              quis imperdiet eu, lobortis eget libero. Mauris commodo id purus
-              id sodales.
-            </p>
+            <Paragraph>
+              Ugolin Ollé, développeur Full Stack en freelance. Actuellement en
+              Colombie, je suis à votre disposition pour vous accompagner dans
+              vos projets de création de sites internet : vitrine, e-commerce,
+              applications web, ou tout autre développement plus spécifique.
+              Passionné par les technologies et le Web, je mets mes compétences
+              au service de vos projets tout en m’adaptant à vos besoins.
+            </Paragraph>
+            <Paragraph>
+              Je m’occupe de la création de projets web de tous types, qu’il
+              s’agisse d’un site vitrine, d’un blog, d’un site WordPress, d’un
+              site e-commerce, d’un site sur mesure, ou d’une application
+              mobile. Les sites internet développés sont également optimisés
+              pour les différents navigateurs et moteurs de recherche et surtout
+              100% adaptés à vos besoins.
+            </Paragraph>
+            <Paragraph>
+              J’ai fait mes études de développement web à Angers. Par la suite,
+              j’ai travaillé chez Nicoka en temps que développeur Back. J’ai
+              également travaillé chez Azerty comme développeur full Stack avant
+              de partir m’installer en Colombie quelque temps pour me concentrer
+              sur mon projet professionnel.
+            </Paragraph>
           </div>
           <div className="flex lg:flex-row flex-col justify-center items-center">
             <h2 className="lg:text-5xl text-3xl w-full font-bold lg:px-0 px-5 text-center lg:w-1/2">
-              Let&apos;s go ? On va discuter de votre projet ?
+              Let&apos;s go ? Parlons de votre projet
             </h2>
             <Image
               src={profile}
@@ -264,8 +272,9 @@ export default function Home() {
               className="lg:w-1/3 w-2/4 lg:mt-0 lg:ml-10 mt-10"
             />
           </div>
-          <Button link="mailto:ugolin@olle.pro" text="On tchat ?" />
+          <Button link="mailto:ugolin@olle.pro" text="On en discute ?" />
         </Section>
+
         {/* Works block */}
         <Section margin="lg:mt-0 mt-20 mb-20" direction="flex-col" delay={3}>
           <h3 className="text-dark dark:text-white text-6xl font-bold lg:mb-10">
