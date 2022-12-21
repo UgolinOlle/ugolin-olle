@@ -3,9 +3,9 @@ import Textra from 'react-textra';
 
 export const Banner = () => {
   const slideText = [
-    'Trouver la solution à vos projets.',
-    'Pimper votre site !',
-    'Customizer votre site de A à Z.',
+    'Trouvez la solution à vos projets.',
+    'pimpez votre site !',
+    'Customisez votre site de A à Z.',
   ];
 
   return (
