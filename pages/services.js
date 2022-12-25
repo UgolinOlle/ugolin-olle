@@ -57,7 +57,7 @@ export default function Services() {
             </div>
             <div className="w-full h-full flex flex-col justify-around items-center lg:grid lg:grid-cols-2 lg:gap-10 mt-10 lg:mt-0">
               <div
-                className="flex flex-col items-center justify-center lg:mb-0 mb-8 lg:col-span-2 bg-no-repeat bg-cover rounded-[50px]"
+                className="flex flex-col items-center justify-center lg:mb-0 mb-8 lg:col-span-2 bg-no-repeat bg-cover rounded-[50px] w-full"
                 style={{ backgroundImage: `url(/mesh-4.png)` }}
               >
                 <h2 className="lg:text-5xl text-4xl font-bold pt-5 text-center">
@@ -77,7 +77,9 @@ export default function Services() {
                 className="flex flex-col items-center justify-center lg:mb-0 mb-8 bg-no-repeat bg-cover rounded-[50px]"
                 style={{ backgroundImage: `url(/mesh-2.png)` }}
               >
-                <h2 className="text-4xl font-bold pt-5">🧱 Intégration web</h2>
+                <h2 className="text-4xl font-bold pt-5 px-2 text-center">
+                  🧱 Intégration web
+                </h2>
                 <p className="py-5 text-[18px] font-poppins px-5 text-center">
                   Intégration de maquette web pour votre site ou application.
                 </p>
@@ -89,7 +91,7 @@ export default function Services() {
                 />
               </div>
               <div
-                className="flex flex-col items-center justify-center bg-no-repeat bg-cover rounded-[50px]"
+                className="flex flex-col items-center justify-center bg-no-repeat bg-cover rounded-[50px] w-full"
                 style={{ backgroundImage: `url(/mesh.png)` }}
               >
                 <h2 className="text-4xl font-bold pt-5">🐛 Autres</h2>
