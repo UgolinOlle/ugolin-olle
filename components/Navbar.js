@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FiGithub, FiMenu } from 'react-icons/fi';
 
-import Toggle from './theme-toggle';
+import Toggle from './ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -32,15 +32,19 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-5 text-[18px]">
-            <a href="mailto:ugolin@olle.pro" className="hover:text-blue-700 transition-all">
+            <a
+              href="mailto:ugolin@olle.pro"
+              className="hover:text-blue-700 transition-all"
+            >
               Contact
             </a>
           </li>
           <li className="p-5 text-[18px] flex items-center">
             <a
               href="https://github.com/UgolinOlle"
-              target='_blank'
-              className="hover:text-blue-700 transition-all" rel="noreferrer"
+              target="_blank"
+              className="hover:text-blue-700 transition-all"
+              rel="noreferrer"
             >
               <FiGithub />
             </a>

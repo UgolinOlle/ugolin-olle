@@ -1,11 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 
-import Navbar from '../navbar';
+import Navbar from '../Navbar';
 import { ThemeProvider } from '@/libs/theme';
 import { GithubProvider } from '@/libs/github';
-import Footer from '../footer';
-import { ContactButton } from '../contact-button';
+import Footer from '../Footer';
+import { ContactButton } from '../ContactButton';
 
 const Layout = ({ children, title }) => {
   return (

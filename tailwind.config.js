@@ -20,10 +20,12 @@ module.exports = {
     colors: {
       dark: '#23272a',
       sdark: '#343a40',
-      blue: '#7289da',
+      blue: '#777BB3',
+      sblue: '#38bdf9',
+      tblue: '#2f71bc',
       white: '#ffffff',
       red: '#d62828',
-      green: '#6a994e',
+      green: '#40b883',
       yellow: '#ffc300',
     },
     extend: {

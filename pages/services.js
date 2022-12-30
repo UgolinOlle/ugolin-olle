@@ -2,9 +2,9 @@ import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { spring, useVariants } from '@/libs/cursor';
-import { Section } from '@/components/section';
-import { Button } from '@/components/button';
-import Layout from '@/components/layouts/main';
+import { Section } from '@/components/Section';
+import { Button } from '@/components/Button';
+import Layout from '@/components/layouts/Main';
 
 export default function Services() {
   const [cursorText, setCursorText] = useState('');

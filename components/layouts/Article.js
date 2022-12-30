@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 
-import Navbar from '@/components/navbar';
-import { ContactButton } from '@/components/contact-button';
+import Navbar from '@/components/Navbar';
+import { ContactButton } from '@/components/ContactButton';
 import { ThemeProvider } from '@/libs/theme';
 import { GithubProvider } from '@/libs/github';
 

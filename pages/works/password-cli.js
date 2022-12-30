@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Article from '@/components/layouts/article';
-import { Section } from '@/components/section';
+import Article from '@/components/layouts/Article';
+import { Section } from '@/components/Section';
 import { Label } from '@/components/label';
 import passwordCli from '../../public/Password CLI.png';
-import { Paragraph } from '@/components/paragraph';
+import { Paragraph } from '@/components/Paragraph';
 
 export default function Work() {
   return (

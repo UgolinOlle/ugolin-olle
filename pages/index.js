@@ -1,15 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { ImArrowUpRight2 } from 'react-icons/im';
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaPlus,
-  FaReact,
-  FaPhp,
-  FaSymfony,
-  FaPython,
-  FaLinux,
-} from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaPlus, FaPhp, FaLinux } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import {
   SiJavascript,
@@ -18,21 +9,22 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiTypescript,
+  SiNextdotjs,
 } from 'react-icons/si';
 import { DiGit } from 'react-icons/di';
 import Image from 'next/image';
 
 import { useVariants, spring } from '@/libs/cursor';
-import { Banner } from '@/components/banner';
-import { Section } from '@/components/section';
-import { Button } from '@/components/button';
-import { Commit, Repos } from '@/components/github';
-import { WorkItem } from '@/components/grid-items';
-import Layout from '@/components/layouts/main';
+import { Banner } from '@/components/Banner';
+import { Section } from '@/components/Section';
+import { Button } from '@/components/Button';
+import { Commit, Repos } from '@/components/Github';
+import { WorkItem } from '@/components/Grid';
+import Layout from '@/components/layouts/Main';
 import passwordCLI from '@/public/Password CLI.png';
 import freelanceCRM from '@/public/Freelance CRM.png';
 import profile from '@/public/profile.png';
-import { Paragraph } from '@/components/paragraph';
+import { Paragraph } from '@/components/Paragraph';
 
 export default function Home() {
   const [cursorText, setCursorText] = useState('');
@@ -188,29 +180,23 @@ export default function Home() {
                   Stacks
                 </h1>
                 <ul className="flex flex-wrap py-9 text-[50px] dark:text-white">
-                  <li className="flex items-center justify-center flex-[23%] my-5 hover:text-blue transition-all">
-                    <FaReact />
+                  <li className="flex items-center justify-center flex-[23%] my-5">
+                    <SiNextdotjs />
                   </li>
                   <li className="flex items-center justify-center flex-[23%] my-5 hover:text-blue transition-all">
                     <FaPhp />
                   </li>
-                  <li className="flex items-center justify-center flex-[23%] my-5 hover:text-blue transition-all">
-                    <FaSymfony />
-                  </li>
                   <li className="flex items-center justify-center flex-[23%] my-5 hover:text-green transition-all">
                     <SiNuxtdotjs />
                   </li>
-                  <li className="flex items-center justify-center flex-[23%] my-5 hover:text-blue transition-all">
+                  <li className="flex items-center justify-center flex-[23%] my-5 hover:text-sblue transition-all">
                     <SiTailwindcss />
                   </li>
                   <li className="flex items-center justify-center flex-[23%] my-5 hover:text-yellow transition-all">
                     <SiJavascript />
                   </li>
-                  <li className="flex items-center justify-center flex-[23%] my-5 hover:text-blue transition-all">
+                  <li className="flex items-center justify-center flex-[23%] my-5 hover:text-tblue transition-all">
                     <SiTypescript />
-                  </li>
-                  <li className="flex items-center justify-center flex-[23%] my-5 hover:text-yellow transition-all">
-                    <FaPython />
                   </li>
                   <li className="flex items-center justify-center flex-[23%] my-5 hover:text-yellow transition-all">
                     <FaLinux />
