@@ -28,18 +28,14 @@ export const Commit = ({ onEnter, onLeave }) => {
 
   return (
     <div
-      className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all bg-cover bg-center bg-no-repeat"
+      className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-2xl shadow-xl hover:scale-110 transition-all bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(/mesh.png)` }}
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}
     >
       <FaPlus className="text-[26px] absolute right-7 top-3" />
       <Number n={$commits} />
-      <h2
-        className="text-bold text-2xl font-poppins"
-        onMouseEnter={onEnter}
-        onMouseLeave={onLeave}
-      >
-        Nombre de commits
-      </h2>
+      <h2 className="text-bold text-2xl font-poppins">Nombre de commits</h2>
     </div>
   );
 };
@@ -49,7 +45,7 @@ export const Repos = () => {
 
   return (
     <div
-      className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-3xl shadow-xl hover:scale-110 transition-all  bg-no-repeat"
+      className="flex item-center flex-col justify-center relative dark:text-white p-9 rounded-2xl shadow-xl hover:scale-110 transition-all  bg-no-repeat"
       style={{ backgroundImage: `url(/mesh-2.png)` }}
     >
       <FaPlus className="text-[26px] absolute right-7 top-3" />

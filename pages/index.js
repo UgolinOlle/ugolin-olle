@@ -84,7 +84,7 @@ export default function Home() {
         </motion.div>
 
         {/* Presentation block */}
-        <Section direction="flex-row" margin="mt-28" delay={0.1}>
+        <Section direction="flex-row" margin="mb-28" delay={0.1}>
           <div className="flex flex-col lg:items-start items-center lg:p-9 pt-3.5 lg:mr-14">
             <h1
               className="md:text-[98px] text-[54px] font-extrabold"
@@ -111,7 +111,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row lg:justify-between md:justify-around w-full">
               <Button mouseOver={projectCursor} mouseLeave={resetCursor}>
                 Lancer votre projet
-                <div className="pl-2">
+                <div className="pl-2 hover:translate-x-2 hover:-translate-y-2 transition-all">
                   <ImArrowUpRight2 />
                 </div>
               </Button>
@@ -153,7 +153,7 @@ export default function Home() {
         {/* Stats block */}
         <Section direction="flex-col" margin="mb-20" delay={1}>
           <div className="flex flex-col lg:flex-row justify-around lg:my-10 lg:mx-10">
-            <div className="rounded-3xl shadow-2xl lg:w-1/2 px-10 py-20 mb-10 md:mb-0 dark:bg-sdark bg-cover">
+            <div className="rounded-2xl shadow-2xl lg:w-1/2 px-10 py-20 mb-10 md:mb-0 dark:bg-sdark bg-cover">
               <h1 className="md:text-[48px] text-4xl font-extrabold text-center dark:text-white">
                 En quelques chiffres
               </h1>
@@ -175,7 +175,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-between lg:ml-10 sm:mt-10 lg:mt-0">
-              <div className="rounded-3xl shadow-2xl h-2/3 text-black p-16 w-full dark:bg-sdark mb-10">
+              <div className="rounded-2xl lg:shadow-2xl h-2/3 text-black p-16 w-full dark:bg-sdark mb-10">
                 <h1 className="md:text-[48px] text-[54px] font-extrabold text-center dark:text-white">
                   Stacks
                 </h1>
@@ -212,16 +212,16 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="rounded-full shadow-2xl h-1/4 text-black lg:p-16 p-12 md:mt-10 lg:mt-0 w-full bg-[url(/mesh.png)] dark:bg-[url(/mesh.png)] hover:bg-[url(/mesh-2.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
+              <div className="rounded-2xl hidden lg:block lg:shadow-2xl h-1/4 text-black lg:p-16 p-12 md:mt-10 lg:mt-0 w-full bg-[url(/mesh.png)] dark:bg-[url(/mesh.png)] hover:bg-[url(/mesh-2.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
             </div>
           </div>
         </Section>
 
         {/* About block */}
-        <Section direction="flex-col" margin="mb-20" delay={2}>
+        <Section direction="flex-col" margin="mb-20" delay={1.5}>
           <div className="flex lg:flex-row flex-col items-center justify-between w-full mb-15 lg:px-10">
             <h2 className="text-6xl font-bold lg:w-1/4 mb-5">Qui je suis ?</h2>
-            <div className="rounded-full md:hidden lg:block shadow-2xl lg:h-[70px] h-[20px] text-black w-2/3 bg-[url(/mesh-2.png)] dark:bg-[url(../public/mesh.png)] hover:bg-[url(/mesh.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
+            <div className="rounded-2xl md:hidden lg:block shadow-2xl lg:h-[70px] h-[20px] text-black w-2/3 bg-[url(/mesh-2.png)] dark:bg-[url(../public/mesh.png)] hover:bg-[url(/mesh.png)] dark:hover:bg-[url(/mesh-2.png)] bg-no-repeat bg-cover dark:shadow-blue-500/50 transition-all" />
           </div>
           <div className="lg:grid lg:grid-cols-3 lg:gap-20 my-20 flex flex-col px-5 lg:px-10">
             <Paragraph>
@@ -262,11 +262,11 @@ export default function Home() {
         </Section>
 
         {/* Works block */}
-        <Section margin="lg:mt-0 mt-20 mb-20" direction="flex-col" delay={3}>
+        <Section margin="mb-20" direction="flex-col" delay={2}>
           <h3 className="text-dark dark:text-white text-6xl font-bold lg:mb-10">
             Mes travaux
           </h3>
-          <div className="lg:grid lg:grid-cols-2 lg:gap-10 flex flex-col justify-around mt-10 md:mx-10 lg:mx-0">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-10 flex flex-col justify-around mt-10 md:mx-10 mx-5">
             <WorkItem
               id="password-cli"
               title="Password CLI"
