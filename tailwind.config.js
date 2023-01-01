@@ -17,7 +17,7 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
     },
     boxShadow: {
-      '2xl': 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;',
+      '2xl': '0px 7px 29px 0px rgba(100, 100, 111, 0.2)',
     },
     colors: {
       dark: '#23272a',
